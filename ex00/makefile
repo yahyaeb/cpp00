@@ -6,12 +6,12 @@
 #    By: yel-bouk <yel-bouk@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/30 16:05:46 by yel-bouk          #+#    #+#              #
-#    Updated: 2025/06/30 16:30:02 by yel-bouk         ###   ########.fr        #
+#    Updated: 2025/07/03 16:20:39 by yel-bouk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = megaphone
-CC = g++
+CC = c++
 SRCS = megaphone.cpp
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 

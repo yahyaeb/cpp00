@@ -6,7 +6,7 @@
 /*   By: yel-bouk <yel-bouk@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 13:24:15 by yel-bouk          #+#    #+#             */
-/*   Updated: 2025/07/02 14:09:34 by yel-bouk         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:21:28 by yel-bouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ private:
     std::string darkestSecret;
 
 public:
-    Contact(); // Constructor
-    ~Contact(); // Destructor
 
     void set(std::string n, std::string ln, std::string nick, std::string phone, std::string secret);
     std::string getName() const;

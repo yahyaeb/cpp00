@@ -6,7 +6,7 @@
 /*   By: yel-bouk <yel-bouk@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 16:05:52 by yel-bouk          #+#    #+#             */
-/*   Updated: 2025/07/02 13:31:06 by yel-bouk         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:37:38 by yel-bouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ int	main()
 	while(1)
 	{
 		std::cout << "type your command:";
-		if (!(std::cin >> command)) {
+
+		if (!std::getline(std::cin, command)) {
 			std::cout << "\nExiting program.\n";
 			break;
 		}
@@ -33,7 +34,7 @@ int	main()
 			std::string name, lastName, nickname, phoneNumber, darkestSecret;
 
 			std::cout << "Contact name: ";
-			std::cin.ignore();
+			// std::cin.ignore();
 			std::getline(std::cin, name);
 			
 			std::cout << "Contact last name: ";
@@ -71,9 +72,10 @@ int	main()
 			{
 				MyPhoneBook.print(contact_count);
 			}
-			std::cout << "Enter Contact Index: (1 to " << contact_count << "): ";
+			std::cout << "Enter Contact Index: (" << contact_count << " contacts available): ";
 			int ind;
 			std::cin >> ind;
+			std::cin.ignore(10000, '\n');
 			ind -= 1;
 			if(std::cin.fail()) {
 				std::cin.clear();
